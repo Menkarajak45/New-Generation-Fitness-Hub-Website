@@ -11,7 +11,10 @@ import path from "path";
 
 dotenv.config();
 const app = express();
-app.use(helmet({ crossOriginResourcePolicy: { policy: "cross-origin" } }));
+app.use(helmet({
+  crossOriginResourcePolicy: { policy: "cross-origin" },
+  contentSecurityPolicy: { directives: { imgSrc: ["'self'", "data:", "https://images.unsplash.com"] } }
+}));
 app.use(cors({ origin: process.env.CLIENT_ORIGIN?.split(",") || true }));
 app.use(express.json({ limit: "1mb" }));
 app.use("/api/auth", rateLimit({ windowMs: 15 * 60 * 1000, limit: 100 }));
