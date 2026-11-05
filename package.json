@@ -1,0 +1,18 @@
+{
+  "name": "new-generation-fitness-hub",
+  "private": true,
+  "version": "2.0.0",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w ngfh-server\" \"npm run dev -w ngfh-client\"",
+    "build": "npm run build -w ngfh-client",
+    "start": "npm start -w ngfh-server",
+    "seed:admin": "npm run seed:admin -w ngfh-server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

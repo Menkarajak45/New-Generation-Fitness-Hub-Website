@@ -1,0 +1,44 @@
+.contact .contact-grid{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);align-items:stretch;gap:7%;margin-top:42px}
+.contact-intro{display:flex;flex-direction:column;align-items:flex-start}
+.contact-intro h2{font-size:clamp(54px,6vw,78px)}
+.contact-intro>p{max-width:440px;margin:24px 0;color:#b8b1a5;font-size:14px;line-height:1.9}
+.contact-whatsapp{display:inline-flex;align-items:center;gap:12px;min-height:54px;padding:0 20px;background:#d8ae59;color:#15120c;border:1px solid #e8c879;font-size:10px;font-weight:800;letter-spacing:1.1px;transition:background .2s,box-shadow .2s,transform .2s}
+.contact-whatsapp:hover{background:#f0c66d;box-shadow:0 8px 26px #d8ae5933;transform:translateY(-2px)}
+.contact-whatsapp>svg{width:24px;height:24px;flex:none}
+.contact-button-arrow{margin-left:8px;font-size:16px}
+.contact-location-visual{position:relative;isolation:isolate;display:flex;flex:1;flex-direction:column;justify-content:space-between;overflow:hidden;width:100%;min-height:190px;margin-top:32px;padding:20px;border:1px solid #514329;background-color:#171611;background-image:linear-gradient(28deg,transparent 47%,#d8ae5910 48%,#d8ae5910 49%,transparent 50%),linear-gradient(145deg,transparent 45%,#ffffff0c 46%,#ffffff0c 47%,transparent 48%),linear-gradient(90deg,#28251d 1px,transparent 1px),linear-gradient(#28251d 1px,transparent 1px);background-size:auto,auto,38px 38px,38px 38px}
+.contact-location-visual:before,.contact-location-visual:after{position:absolute;z-index:-1;content:"";width:240px;height:48px;border:1px solid #d8ae5930;border-radius:50%;transform:rotate(-30deg)}
+.contact-location-visual:before{top:42%;left:25%}
+.contact-location-visual:after{top:55%;left:5%;width:310px;transform:rotate(22deg)}
+.location-visual-top,.location-visual-label{display:flex;align-items:center;gap:10px}
+.location-visual-top{color:#d8ae59;font-size:9px;font-weight:700;letter-spacing:1.8px}
+.location-visual-icon{display:grid;width:34px;height:34px;place-items:center;border:1px solid #d8ae5980;background:#171611}
+.location-visual-icon svg{width:18px;height:18px;fill:none;stroke:#e8c879;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.6}
+.location-visual-label{align-items:flex-start;flex-direction:column;gap:5px;padding-top:12px;border-top:1px solid #d8ae5940}
+.location-visual-label b{font:700 22px 'Barlow Condensed';letter-spacing:1.3px}
+.location-visual-label span{color:#aaa196;font-size:9px;letter-spacing:1.7px}
+.contact-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;gap:12px;border:0}
+.contact-card{display:flex;min-width:0;min-height:94px;align-items:center;gap:13px;padding:17px;border:1px solid #383329;background:linear-gradient(135deg,#1a1916,#151411);transition:border-color .2s,background .2s,transform .2s}
+.contact-card:hover,.contact-map-card:hover{border-color:#b89550;background:#1d1b16;transform:translateY(-2px)}
+.contact-address,.contact-phone,.contact-hours,.contact-map-card{grid-column:1/-1}
+.contact-icon{display:grid;width:38px;height:38px;flex:none;place-items:center;border:1px solid #d8ae5945;background:#d8ae590b;color:#d8ae59}
+.contact-icon svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.contact-card>div,.contact-card>span:nth-child(2){display:grid;min-width:0;gap:7px}
+.contact-card small,.contact-map-card small{color:#d8ae59;font-size:8px;font-weight:700;letter-spacing:1.7px}
+.contact-card b{color:#eee9df;font-size:12px;font-weight:500;line-height:1.7;overflow-wrap:anywhere}
+.contact-phone,.contact-instagram{color:inherit}
+.contact-card-arrow{margin-left:auto;color:#d8ae59;font-size:16px}
+.contact-hours{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.contact-hours .contact-card{align-items:flex-start;min-height:110px;padding:15px 13px}
+.contact-hours .contact-icon{width:32px;height:32px}
+.contact-hours .contact-card b{font-size:11px}
+.contact-instagram{min-height:86px}
+.contact-instagram-icon svg{fill:none}
+.contact-map-card{display:flex;min-width:0;min-height:94px;align-items:center;gap:13px;padding:15px 17px;border:1px solid #383329;background:linear-gradient(135deg,#1a1916,#151411);transition:border-color .2s,background .2s,transform .2s}
+.google-maps-logo{width:38px;height:38px;flex:none}
+.contact-map-card>span:nth-child(2){display:grid;min-width:0;gap:5px}
+.contact-map-card b{color:#eee9df;font-size:12px;font-weight:600}
+.contact-map-card>span:nth-child(2)>span{color:#aaa196;font-size:10px}
+@media(max-width:900px){.contact .contact-grid{grid-template-columns:1fr;gap:32px}.contact-intro>p{max-width:560px}.contact-location-visual{min-height:170px}.contact-details{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.contact .contact-grid{margin-top:28px;gap:25px}.contact-intro h2{font-size:clamp(48px,13vw,64px)}.contact-intro>p{margin:18px 0 22px;font-size:13px}.contact-whatsapp{width:100%;justify-content:center;min-height:56px}.contact-location-visual{min-height:160px;margin-top:22px;padding:16px}.contact-details{grid-template-columns:1fr;gap:10px}.contact-address,.contact-phone,.contact-hours,.contact-map-card{grid-column:auto}.contact-hours{grid-template-columns:1fr 1fr;gap:10px}.contact-hours .contact-card{flex-direction:column;align-items:flex-start;min-height:128px;padding:13px 10px}.contact-hours .contact-card b{font-size:10px}.contact-card{padding:14px 12px}.contact-map-card{min-height:88px}}
+@media(prefers-reduced-motion:reduce){.contact-whatsapp,.contact-card,.contact-map-card{transition:none}}
