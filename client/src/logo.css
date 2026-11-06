@@ -1,0 +1,12 @@
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 85px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.nav .brand-logo {
+  width: 34px;
+  height: 34px;
+}
