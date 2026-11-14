@@ -15,3 +15,17 @@
     object-fit:cover;
   }
 }
+
+/* Accessibility: improve contrast for membership and registration text */
+.plan-note,
+.gallery-disclaimer {
+  color: #c4bdb1;
+}
+
+.plans .section-heading > p {
+  color: #c4bdb1;
+}
+
+.join-form small {
+  color: #c4bdb1;
+}
